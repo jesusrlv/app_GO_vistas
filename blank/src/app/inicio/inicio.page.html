@@ -1,11 +1,10 @@
 <ion-header>
   <ion-toolbar color="warning">
-    <ion-title>App GO!</ion-title>
+    <ion-title [routerLink]="['/inicio']"><img src="assets/icon/logo_go.png" width="30" alt="" [routerLink]="['/inicio']"></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  
 
   <div class="container">
    
@@ -13,7 +12,7 @@
 <ion-toolbar>
   <p><ion-title class="ion-text-center">Bienvenido a</ion-title></p>
   <p class="ion-text-center"><img src="assets/icon/logo_go.png" alt="" width="100"></p>
-  <p class="ion-text-center"><ion-button expand="" color="warning"><ion-icon name="checkbox-sharp"></ion-icon> Activar cuenta</ion-button></p>
+  <p class="ion-text-center"><ion-button expand="" color="warning" [routerLink]="['/activar']"><ion-icon name="checkbox-sharp"></ion-icon> Activar cuenta</ion-button></p>
   <p class="ion-text-center"><ion-button expand=""><ion-icon name="person-circle-sharp"></ion-icon>  Iniciar sesión</ion-button></p>
 </ion-toolbar>
 
