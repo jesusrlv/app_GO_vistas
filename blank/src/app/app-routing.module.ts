@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'activar',
     loadChildren: () => import('./activar/activar.module').then( m => m.ActivarPageModule)
   },
+  {
+    path: 'solicitud-codigo',
+    loadChildren: () => import('./solicitud-codigo/solicitud-codigo.module').then( m => m.SolicitudCodigoPageModule)
+  },
+  {
+    path: 'home-residente',
+    loadChildren: () => import('./home-residente/home-residente.module').then( m => m.HomeResidentePageModule)
+  },
 ];
 
 @NgModule({
