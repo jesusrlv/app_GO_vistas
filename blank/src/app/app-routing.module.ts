@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'home-residente',
     loadChildren: () => import('./home-residente/home-residente.module').then( m => m.HomeResidentePageModule)
   },
+  {
+    path: 'web-embebed',
+    loadChildren: () => import('./web-embebed/web-embebed.module').then( m => m.WebEmbebedPageModule)
+  },
 ];
 
 @NgModule({
