@@ -13,7 +13,8 @@ export class WebEmbebedPage implements OnInit {
   constructor(private domSatizer:DomSanitizer) { }
 
   ngOnInit() {
-    this.Url = this.domSatizer.bypassSecurityTrustResourceUrl("http://www.shoesstoremxa.com/");
+    // this.Url = this.domSatizer.bypassSecurityTrustResourceUrl("http://www.shoesstoremxa.com/");
+    this.Url = this.domSatizer.bypassSecurityTrustResourceUrl("http://www.shoesstoremxa.com/rastreo.php");
   }
 
 }
